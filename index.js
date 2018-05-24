@@ -8,7 +8,12 @@ function destructivelyAppendKitten(name)
 
 function destructivelyPrependKitten(name)
 {
-  kittens.pop(name)
+  kittens.unshift(name)
+  return kittens
+}
+function destructivelyPrependKitten(name)
+{
+  kittens.unshift(name)
   return kittens
 }
   
